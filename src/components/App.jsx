@@ -1,16 +1,14 @@
+import { User } from './User';
+import user from '../user.json';
+
+import stats from '../data.json';
+import { StatList } from './StatList';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <>
+      <User user={user} />
+      <StatList title={'Upload stats'} stats={stats} />
+    </>
   );
 };
