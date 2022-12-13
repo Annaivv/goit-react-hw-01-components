@@ -1,3 +1,4 @@
+import PropTypes, { arrayOf } from 'prop-types';
 import { Stat } from './Statistics';
 
 export const StatList = ({ title, stats }) => {
@@ -13,4 +14,12 @@ export const StatList = ({ title, stats }) => {
       </ul>
     </div>
   );
+};
+
+StatList.propTypes = {
+  stats: arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+    })
+  ).isRequired,
 };
