@@ -5,7 +5,7 @@ import { User } from './User/User';
 import user from '../user.json';
 
 import stats from '../data.json';
-import { StatList } from './StatList';
+import { StatList } from './Statistics/StatList';
 
 import friends from '../friends.json';
 import { FriendList } from './FriendList';

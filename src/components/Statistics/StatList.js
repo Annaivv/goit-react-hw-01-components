@@ -1,18 +1,19 @@
 import PropTypes, { arrayOf } from 'prop-types';
 import { Stat } from './Statistics';
+import { StatContainer, StatTitle, DataList, DataLi } from './Stat.styled';
 
 export const StatList = ({ title, stats }) => {
   return (
-    <div>
-      {title && <h2>{title}</h2>}
-      <ul>
+    <StatContainer>
+      {title && <StatTitle>{title}</StatTitle>}
+      <DataList>
         {stats.map(stat => (
-          <li key={stat.id}>
+          <DataLi key={stat.id}>
             <Stat stat={stat} />
-          </li>
+          </DataLi>
         ))}
-      </ul>
-    </div>
+      </DataList>
+    </StatContainer>
   );
 };
 
