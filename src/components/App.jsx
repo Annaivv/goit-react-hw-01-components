@@ -8,7 +8,7 @@ import stats from '../data.json';
 import { StatList } from './Statistics/StatList';
 
 import friends from '../friends.json';
-import { FriendList } from './FriendList';
+import { FriendList } from './FriendList/FriendList';
 
 export const App = () => {
   return (
