@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 export const AllFriends = styled.ul`
   margin: 20px auto;
